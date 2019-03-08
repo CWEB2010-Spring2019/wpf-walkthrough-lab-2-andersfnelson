@@ -24,5 +24,12 @@ namespace Lab_two_starter
         {
             InitializeComponent();
         }
+
+
+        //Custom constructor to pass expense report data
+        public ExpenseReportPage(object data) : this()
+        {
+            this.DataContext = data;
+        }
     }
 }
